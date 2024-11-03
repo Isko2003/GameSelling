@@ -82,6 +82,7 @@ import MultipleItems from "./Components/MultipleItems";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProtectedRoute from "./Components/ProtectedRoute";
+import UserInfo from "./Components/UserInfo";
 
 function App() {
   const showLinks = () => {
@@ -185,7 +186,7 @@ function App() {
             <Link to={"/search"}>
               <i className="fa-solid fa-magnifying-glass"></i>
             </Link>
-            <Link to={"/login-register"}>
+            <Link to={"/user-info"}>
               <i className="fa-regular fa-user"></i>
             </Link>
             <Link to={"/basket"}>
@@ -227,6 +228,7 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route path="/user-info" element={<UserInfo />} />
           <Route path="/ghost" element={<Ghost />} />
           <Route path="/lastofus" element={<LastOfUs />} />
           <Route path="/gtav" element={<GtaV />} />
