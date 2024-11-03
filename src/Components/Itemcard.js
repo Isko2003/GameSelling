@@ -3,7 +3,6 @@ import { useCart } from "react-use-cart";
 import { useState } from "react";
 import { Link, NavLink, Route, Routes } from "react-router-dom";
 import Swal from "sweetalert2";
-// import Basket from './Basket';
 const Itemcard = (props) => {
   const { addItem } = useCart();
   const [message, setMessage] = useState("");
