@@ -1,7 +1,6 @@
-import React from "react";
-import { Routes, Route, Link, NavLink, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import Register from "./Register";
-import { useState } from "react";
 import Swal from "sweetalert2";
 
 const LoginRegister = () => {
@@ -12,12 +11,13 @@ const LoginRegister = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    const storedUser = JSON.parse(localStorage.getItem("user"));
-    if (
-      storedUser &&
-      storedUser.email === email &&
-      storedUser.password === password
-    ) {
+    const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
+    const user = storedUsers.find(
+      (user) => user.email === email && user.password === password
+    );
+
+    if (user) {
+      localStorage.setItem("loggedInUser", JSON.stringify(user));
       Swal.fire({
         icon: "success",
         title: "Login successful!",
@@ -34,25 +34,26 @@ const LoginRegister = () => {
   };
 
   const togglePass = () => {
-    let passInput = document.querySelector("#password");
-    let eye = document.querySelector(".login-fields i");
-    if (passInput.getAttribute("type") == "password") {
-      setShowPass("text");
-    } else {
-      setShowPass("password");
-    }
+    setShowPass(showPass === "password" ? "text" : "password");
+    setEyeSlash(
+      eye === "fa-solid fa-eye-slash"
+        ? "fa-solid fa-eye"
+        : "fa-solid fa-eye-slash"
+    );
+  };
 
-    if (eye.classList.contains("fa-eye-slash")) {
-      setEyeSlash("fa-solid fa-eye");
-    } else {
-      setEyeSlash("fa-solid fa-eye-slash");
+  const handleKeyDown = (event) => {
+    if (event.key === "Enter") {
+      setTimeout(() => {
+        handleLogin();
+      }, 500)
     }
   };
 
   return (
     <div>
       <section className="login-register mt-5">
-        <div className="login-signup">
+        <div className="login-signin">
           <div className="login-part">
             <div className="login-text">
               <h2>LOGIN</h2>
@@ -71,6 +72,7 @@ const LoginRegister = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter Your Email"
+                onKeyDown={handleKeyDown}
               />
               <br />
               <input
@@ -80,6 +82,7 @@ const LoginRegister = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="Enter Your Password"
+                onKeyDown={handleKeyDown}
                 style={{
                   borderColor:
                     password.length === 0

@@ -228,7 +228,14 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route path="/user-info" element={<UserInfo />} />
+          <Route
+            path="/user-info"
+            element={
+              <ProtectedRoute>
+                <UserInfo />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/ghost" element={<Ghost />} />
           <Route path="/lastofus" element={<LastOfUs />} />
           <Route path="/gtav" element={<GtaV />} />
@@ -244,15 +251,43 @@ function App() {
           <Route path="/assassincreed" element={<AssassinCreed />} />
           <Route path="/avatar" element={<Avatar />} />
           <Route path="/crew" element={<Crew />} />
-          <Route path="/ps5" element={<PS5 />} />
+          <Route
+            path="/ps5"
+            element={
+              <ProtectedRoute>
+                <PS5 />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/login-register" element={<LoginRegister />} />
           <Route path="/register" element={<Register />} />
           <Route path="/madden" element={<Madden />} />
-          <Route path="/ps4" element={<PS4 />} />
+          <Route
+            path="/ps4"
+            element={
+              <ProtectedRoute>
+                <PS4 />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/f1" element={<F1 />} />
-          <Route path="/xbox" element={<Xbox />} />
+          <Route
+            path="/xbox"
+            element={
+              <ProtectedRoute>
+                <Xbox />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/nintendo" element={<Nintendo />} />
-          <Route path="/ps4pro" element={<PS4Pro />} />
+          <Route
+            path="/ps4pro"
+            element={
+              <ProtectedRoute>
+                <PS4Pro />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/ps5slim" element={<Ps5Slim />} />
           <Route path="/elden-ring" element={<Elden />} />
           <Route path="/f1-24" element={<F124 />} />
@@ -292,14 +327,28 @@ function App() {
           <Route path="/xboxgreen" element={<XboxGreen />} />
           <Route path="/vr2" element={<Vr2 />} />
           <Route path="/edge" element={<Edge />} />
-          <Route path="/xboxseriesx" element={<XboxSeriesX />} />
+          <Route
+            path="/xboxseriesx"
+            element={
+              <ProtectedRoute>
+                <XboxSeriesX />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/movemotion" element={<MoveMotion />} />
           <Route path="/logitech" element={<Logitech />} />
           <Route path="/xboxpulse" element={<XboxPulse />} />
           <Route path="/xboxdaystrike" element={<XboxDaystrike />} />
           <Route path="/xboxjoy" element={<XboxJoy />} />
           <Route path="/xboxneonblue" element={<XboxNeonBlue />} />
-          <Route path="/nintendodock" element={<NintendoDock />} />
+          <Route
+            path="/nintendodock"
+            element={
+              <ProtectedRoute>
+                <NintendoDock />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/oculus" element={<Oculus />} />
           <Route path="/samsungm7" element={<SamsungM7 />} />
           <Route path="/msirtx" element={<MsiRtx />} />

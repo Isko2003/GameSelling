@@ -90,3 +90,18 @@ span {
     font-size: 12px;
   }
 }
+
+.logout-button {
+  background-color: red;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.logout-button:hover {
+  background-color: #383838;
+}

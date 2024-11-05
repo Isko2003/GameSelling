@@ -1,8 +1,23 @@
 import React from "react";
 import "../UserInfo.css";
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const UserInfo = () => {
-  const user = JSON.parse(localStorage.getItem("user"));
+  const user = JSON.parse(localStorage.getItem("loggedInUser"));
+  const navigate = useNavigate();
+
+  const handleLogOut = () => {
+    localStorage.removeItem("loggedInUser");
+    Swal.fire({
+      icon: "success",
+      title: "Logged out successfully",
+      timer: 2000,
+      showConfirmButton: false,
+    }).then(() => {
+      navigate("/login-register");
+    });
+  };
 
   return (
     <div className="user-info-container">
@@ -18,6 +33,9 @@ const UserInfo = () => {
               <strong>Email:</strong>
               <span>{user.email}</span>
             </div>
+            <button onClick={handleLogOut} className="logout-button">
+              Log Out
+            </button>
           </div>
         ) : (
           <p className="no-data">No user data found.</p>

@@ -1,6 +1,5 @@
 import React from "react";
 import { useCart } from "react-use-cart";
-import { Link, NavLink, Route, Routes } from "react-router-dom";
 import Swal from "sweetalert2";
 const Basket = () => {
   const {
@@ -38,7 +37,7 @@ const Basket = () => {
                   return (
                     <tr key={index}>
                       <td className="table-image">
-                        <img src={item.img} />
+                        <img src={item.img} alt="productImg"/>
                       </td>
                       <td className="table-title">{item.title}</td>
                       <td>₹ {item.price}</td>
