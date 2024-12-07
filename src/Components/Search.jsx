@@ -1,9 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SearchCard from "./SearchCard";
 import data from "../data";
 import Itemcard2 from "./Itemcard2";
+import { useTranslation } from "react-i18next";
 
 const Search = () => {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, [i18n]);
+
   const [searchTerm, setSearchTerm] = useState("");
   const [found, setFound] = useState(true);
 
@@ -26,7 +36,7 @@ const Search = () => {
             name="search"
             id="search"
             className="search"
-            placeholder="Search any game you want"
+            placeholder={t("searchGame")}
             value={searchTerm}
             onChange={handleChange}
           />

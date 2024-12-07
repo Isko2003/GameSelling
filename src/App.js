@@ -215,6 +215,7 @@ function App() {
                 id="language"
                 value={i18n.language}
                 onChange={handleChangeLanguage}
+                className="language-select"
               >
                 <option value="en">EN</option>
                 <option value="az">AZ</option>

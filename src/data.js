@@ -1,19 +1,19 @@
-import callOfDuty from './call_of_duty.jpeg'
+import callOfDuty from "./call_of_duty.jpeg";
 
 const data = {
   productData: [
     {
       id: 1,
       img: callOfDuty,
-      title: 'CALL OF DUTY: MODERN WARFARE 2 - PS5 (PRE-OWNED)',
-      desc: 'Activision',
+      title: "CALL OF DUTY: MODERN WARFARE 2 - PS5 (PRE-OWNED)",
+      desc: "Activision",
       price: 2199,
     },
     {
       id: 2,
       img: "https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1934",
       title: "THE LAST OF US PART I - PS5 (PRE-OWNED)",
-      desc:  "Electronics",
+      desc: "Electronics",
       price: 2799,
     },
     {
@@ -145,21 +145,24 @@ const data = {
     {
       id: 21,
       img: "https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1128",
-      title: "XBOX ONE CONTROLLER (3RD GEN) GREY & GREEN - XBOX ONE (PRE-OWNED)",
+      title:
+        "XBOX ONE CONTROLLER (3RD GEN) GREY & GREEN - XBOX ONE (PRE-OWNED)",
       desc: "Electronics",
       price: 4199,
     },
     {
       id: 22,
       img: "https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1717",
-      title: "NINTENDO SWITCH OLED MODEL RED AND NEON BLUE - NINTENDO SWITCH (PRE-OWNED)",
+      title:
+        "NINTENDO SWITCH OLED MODEL RED AND NEON BLUE - NINTENDO SWITCH (PRE-OWNED)",
       desc: "Electronics",
       price: 27999,
     },
     {
       id: 23,
       img: "https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1872",
-      title: "SONY PLAYSTATION 4 PRO 1 TB (BODY DAMAGE) BLACK - PS4 (PRE-OWNED)",
+      title:
+        "SONY PLAYSTATION 4 PRO 1 TB (BODY DAMAGE) BLACK - PS4 (PRE-OWNED)",
       desc: "Electronics",
       price: 24999,
     },
@@ -215,14 +218,16 @@ const data = {
     {
       id: 31,
       img: "https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1595",
-      title: "SONY PLAYSTATION 5 OFFICIAL DUAL SENSE CONTROLLER MIDNIGHT BLACK - PS5",
+      title:
+        "SONY PLAYSTATION 5 OFFICIAL DUAL SENSE CONTROLLER MIDNIGHT BLACK - PS5",
       desc: "Electronics",
       price: 5999,
     },
     {
       id: 32,
       img: "https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1086",
-      title: "SONY PLAYSTATION 5 OFFICIAL DUAL SENSE CONTROLLER WHITE - PS5 (PRE-OWNED)",
+      title:
+        "SONY PLAYSTATION 5 OFFICIAL DUAL SENSE CONTROLLER WHITE - PS5 (PRE-OWNED)",
       desc: "Electronics",
       price: 4999,
     },
@@ -236,21 +241,24 @@ const data = {
     {
       id: 34,
       img: "https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_999",
-      title: "NINTENDO SWITCH OLED MODEL RED AND NEON BLUE - NINTENDO SWITCH (PRE-OWNED)",
+      title:
+        "NINTENDO SWITCH OLED MODEL RED AND NEON BLUE - NINTENDO SWITCH (PRE-OWNED)",
       desc: "Electronics",
       price: 27999,
     },
     {
       id: 35,
       img: "https://sgp1.digitaloceanspaces.com/relay-bl-in-records/GameNation/EA_1596",
-      title: "SONY PLAYSTATION 5 OFFICIAL DUAL SENSE CONTROLLER COSMIC RED (PRE-OWNED)",
+      title:
+        "SONY PLAYSTATION 5 OFFICIAL DUAL SENSE CONTROLLER COSMIC RED (PRE-OWNED)",
       desc: "Electronics",
       price: 9999,
     },
     {
       id: 36,
       img: "https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1128",
-      title: "XBOX ONE CONTROLLER (3RD GEN) GREY & GREEN - XBOX ONE (PRE-OWNED)",
+      title:
+        "XBOX ONE CONTROLLER (3RD GEN) GREY & GREEN - XBOX ONE (PRE-OWNED)",
       desc: "Electronics",
       price: 4199,
     },
@@ -439,14 +447,16 @@ const data = {
     {
       id: 63,
       img: "https://sgp1.digitaloceanspaces.com/relay-bl-in-records/GameNation/EA_1857",
-      title: "SONY PLAYSTATION 4 SLIM 1 TB (BODY DAMAGE) GOLD - PS4 (PRE-OWNED)",
+      title:
+        "SONY PLAYSTATION 4 SLIM 1 TB (BODY DAMAGE) GOLD - PS4 (PRE-OWNED)",
       desc: "Electronics",
       price: 23999,
     },
     {
       id: 64,
       img: "https://sgp1.digitaloceanspaces.com/relay-bl-in-records/GameNation/EA_1826",
-      title: "SONY PLAYSTATION 4 STANDARD 500GB (BODY DAMAGE) GLACIER WHITE - PS4 (PRE-OWNED)",
+      title:
+        "SONY PLAYSTATION 4 STANDARD 500GB (BODY DAMAGE) GLACIER WHITE - PS4 (PRE-OWNED)",
       desc: "Electronics",
       price: 21999,
     },
@@ -457,6 +467,6 @@ const data = {
       desc: "Electronics",
       price: 17999,
     },
-  ]
+  ],
 };
 export default data;

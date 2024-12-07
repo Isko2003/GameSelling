@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useCart } from "react-use-cart";
 import Swal from "sweetalert2";
+import { useTranslation } from "react-i18next";
 const Basket = () => {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, [i18n]);
+
   const {
     isEmpty,
     totalUniqueItems,
@@ -13,7 +23,7 @@ const Basket = () => {
     emptyCart,
   } = useCart();
   if (isEmpty) {
-    return <h1 className="text-center empty-message">Your Cart is Empty...</h1>;
+    return <h1 className="text-center empty-message">{t("emptyCart")}...</h1>;
   }
   const console2 = () => {
     Swal.fire({
@@ -29,7 +39,7 @@ const Basket = () => {
         <div className="row justify-content-center">
           <div className="col-12">
             <h5>
-              Cart ({totalUniqueItems}) Total Items: {totalItems}{" "}
+              {t("cart")} ({totalUniqueItems}) {t("totalItems")}: {totalItems}{" "}
             </h5>
             <table className="card-table m-0">
               <tbody>
@@ -37,12 +47,14 @@ const Basket = () => {
                   return (
                     <tr key={index}>
                       <td className="table-image">
-                        <img src={item.img} alt="productImg"/>
+                        <img src={item.img} alt="productImg" />
                       </td>
                       <td className="table-title">{item.title}</td>
                       <td>₹ {item.price}</td>
-                      <td>Quantity: ({item.quantity})</td>
                       <td>
+                        {t("quantity")}: ({item.quantity})
+                      </td>
+                      <td className="update-row">
                         <button
                           className="btn ms-2 update-button"
                           onClick={() =>
@@ -63,7 +75,7 @@ const Basket = () => {
                           className="btn btn-danger ms-2 remove-item"
                           onClick={() => removeItem(item.id)}
                         >
-                          Remove Item
+                          {t("removeItem")}
                         </button>
                       </td>
                     </tr>
@@ -73,16 +85,18 @@ const Basket = () => {
             </table>
           </div>
           <div className="col-auto ms-lg-auto d-flex align-items-center total-price">
-            <h2>Total Price: ₹ {cartTotal}</h2>
+            <h2>
+              {t("totalPrice")}: ₹ {cartTotal}
+            </h2>
           </div>
           <div className="col-auto d-flex align-items-center">
             <button className="btn btn-danger m-2" onClick={() => emptyCart()}>
-              Clear Cart
+              {t("clearCart")}
             </button>
           </div>
           <div className="col-auto d-flex align-items-center">
             <button className="btn btn-info m-2" onClick={() => console2()}>
-              Sell Now
+              {t("sellNow")}
             </button>
           </div>
         </div>

@@ -7,7 +7,7 @@ const Zotac3050 = () => {
       <div className="container mt-5 spiderman">
         {
           data.productData.map((item,index) => {
-            if (item.id == 61) {
+            if (item.id === 61) {
               return (
                 <Itemcard 
                   img={item.img}

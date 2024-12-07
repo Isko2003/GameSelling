@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useCart } from "react-use-cart";
 import { useState } from "react";
 import { Link, NavLink, Route, Routes } from "react-router-dom";
 import Swal from "sweetalert2";
+import { useTranslation } from "react-i18next";
 const Itemcard = (props) => {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, [i18n]);
+
   const { addItem } = useCart();
   const [message, setMessage] = useState("");
 
@@ -11,15 +21,15 @@ const Itemcard = (props) => {
     Swal.fire({
       position: "center",
       icon: "success",
-      title: "Product Added to Cart",
+      title: t("productAdd"),
       showConfirmButton: true,
       timer: 1500,
     });
   };
   const console2 = () => {
     Swal.fire({
-      title: "Now You Can Sell Your Product",
-      text: "Product Added to Sell Cart!",
+      title: t("nowSell"),
+      text: t("productAddSell"),
       icon: "success",
     });
   };
@@ -57,7 +67,7 @@ const Itemcard = (props) => {
             <p className="pt-2"> ₹ {props.price}</p>
             <div className="normal-price d-flex mt-1">
               <p>₹ 4499</p>
-              <h4>Save 51%</h4>
+              <h4>{t("save51")}</h4>
             </div>
           </div>
           <div className="add-to-cart d-flex mt-3">
@@ -68,7 +78,7 @@ const Itemcard = (props) => {
                 console();
               }}
             >
-              Add to Cart
+              {t("addToCart")}
             </button>
             <span className="d-flex d-none">
               {message}
@@ -81,7 +91,7 @@ const Itemcard = (props) => {
                 console2();
               }}
             >
-              Sell Now
+              {t("sellNow")}
             </button>
             <span className="d-flex d-none sell-span">
               {message}

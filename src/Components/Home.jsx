@@ -440,9 +440,9 @@ const Home = () => {
                 <ul className="legal-dropdown d-none d-lg-block">
                   <li>{t("termsCondition")}</li>
                   <li>{t("cancel")}</li>
-                  <li>Trade In Policy</li>
-                  <li>Shipping Policy</li>
-                  <li>Privacy Policy</li>
+                  <li>{t("trade")}</li>
+                  <li>{t("shippingPolicy")}</li>
+                  <li>{t("privacyPolicy")}</li>
                 </ul>
               </div>
             </div>
@@ -451,12 +451,12 @@ const Home = () => {
                 className="legal-wrapper col-12 col-lg-6 help-need"
                 onClick={showHelp}
               >
-                <h4>Need Help</h4>
+                <h4>{t("needHelp")}</h4>
                 <ul className="help-dropdown d-none d-lg-block">
                   <li>FAQs</li>
-                  <li>My Account</li>
-                  <li>My Orders</li>
-                  <li>GameVerse Wallet</li>
+                  <li>{t("myAccount")}</li>
+                  <li>{t("myOrders")}</li>
+                  <li>GameVerse {t("wallet")}</li>
                 </ul>
               </div>
             </div>
@@ -464,7 +464,7 @@ const Home = () => {
           <div className="footer-connect col-md-4 align-items-center col-lg-2">
             <div className="connect-with-us d-flex align-items-center">
               <div className="connect-with-us-left col-7">
-                <h4>Connect with us.</h4>
+                <h4>{t("connectUs")}.</h4>
                 <div className="connect-with-us-logos d-flex">
                   <div className="footer-insta">
                     <a href="https://www.instagram.com/smaylovh/">
@@ -490,7 +490,7 @@ const Home = () => {
                       <img src={logoImg} alt="G-logo" />
                     </div>
                     <div className="about-us-word d-flex align-items-center justify-content-center">
-                      <p className="p-0 m-0">About Us</p>
+                      <p className="p-0 m-0">{t("aboutUs")}</p>
                       <i class="fa-solid fa-chevron-right"></i>
                     </div>
                   </div>
