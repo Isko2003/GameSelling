@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../game-logo.png";
 import secondImage from "../AdAsset_100.webp";
 import thirdImage from "../AdAsset_101.webp";
@@ -25,7 +25,17 @@ import MultipleOnSale from "./MultipleOnSale";
 import MultipleConsoles from "./MultipleConsoles";
 import MultipleOnArrivals from "./MultipleOnArrivals";
 import MultipleOnOrder from "./MultipleOnOrder";
+import { useTranslation } from "react-i18next";
 const Home = () => {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, [i18n]);
+
   const showLinks = () => {
     let dots = document.querySelector(".three-dots");
     let links = document.querySelector(".header-links");
@@ -144,7 +154,7 @@ const Home = () => {
         <div className="best-sellers mt-4 sellers-line">
           <br />
           <div className="word-best-sellers d-flex justify-content-center">
-            <h3>Best Sellers</h3>
+            <h3>{t("bestSellers")}</h3>
           </div>
           <div className="line d-flex justify-content-center">
             <img
@@ -164,7 +174,7 @@ const Home = () => {
           </div>
           <div className="load-more-btn">
             <button className="load-more" onClick={loadMore}>
-              Load More
+              {t("loadMore")}
             </button>
           </div>
         </div>
@@ -181,7 +191,7 @@ const Home = () => {
           </div>
           <div className="load-more-btn">
             <button className="show-less" onClick={showLess}>
-              Show Less
+              {t("showLess")}
             </button>
           </div>
         </div>
@@ -189,7 +199,7 @@ const Home = () => {
         <div className="best-sellers mt-4 new-arrivals">
           <br />
           <div className="word-best-sellers d-flex justify-content-center">
-            <h3>New Arrivals</h3>
+            <h3>{t("newArrivals")}</h3>
           </div>
           <div className="line d-flex justify-content-center">
             <img
@@ -211,7 +221,7 @@ const Home = () => {
         <div className="best-sellers mt-4 on-sale">
           <br />
           <div className="word-best-sellers d-flex justify-content-center on-sale-word">
-            <h3>On Sale</h3>
+            <h3>{t("onSale")}</h3>
           </div>
           <div className="line d-flex justify-content-center">
             <img
@@ -233,7 +243,7 @@ const Home = () => {
         <div className="best-sellers mt-4 pre-order">
           <br />
           <div className="word-best-sellers d-flex justify-content-center">
-            <h3>Pre Order</h3>
+            <h3>{t("preOrder")}</h3>
           </div>
           <div className="line d-flex justify-content-center pre-order-line">
             <img
@@ -255,7 +265,7 @@ const Home = () => {
         <div className="best-sellers mt-4 consoles-accesories">
           <br />
           <div className="word-best-sellers d-flex justify-content-center">
-            <h3>Consoles & Accessories</h3>
+            <h3>{t("consolesAccessories")}</h3>
           </div>
           <div className="line d-flex justify-content-center consoles-line">
             <img
@@ -282,12 +292,12 @@ const Home = () => {
             </div>
             <div className="section-info col-6 col-md-3 col-lg-3">
               <div className="section-inner">
-                <h3>We also buy games</h3>
-                <p>Looking to sell your games?</p>
-                <p>It's easy. Follow 3 steps and sell your games</p>
+                <h3>{t("buyGames")}</h3>
+                <p>{t("lookingToSell")}</p>
+                <p>{t("itsEasy")}</p>
                 <br />
                 <Link to={"/Sell"} className="sell-now">
-                  Sell Now
+                  {t("sellNow")}
                 </Link>
               </div>
             </div>
@@ -302,8 +312,8 @@ const Home = () => {
                     />
                   </div>
                 </div>
-                <h4>Select a game</h4>
-                <p>Select a game that you want to sell</p>
+                <h4>{t("selectGame")}</h4>
+                <p>{t("selectSell")}</p>
               </div>
               <div className="first-step d-md-none d-lg-grid col-lg-4">
                 <p>2</p>
@@ -315,8 +325,8 @@ const Home = () => {
                     />
                   </div>
                 </div>
-                <h4>Shipping</h4>
-                <p>Free pickup at you door step</p>
+                <h4>{t("shipping")}</h4>
+                <p>{t("freePickup")}</p>
               </div>
               <div className="first-step d-md-none d-lg-grid col-lg-4">
                 <p>3</p>
@@ -328,8 +338,8 @@ const Home = () => {
                     />
                   </div>
                 </div>
-                <h4>Get paid</h4>
-                <p>In cash or Credits</p>
+                <h4>{t("getPaid")}</h4>
+                <p>{t("inCash")}</p>
               </div>
             </div>
           </div>
@@ -339,7 +349,7 @@ const Home = () => {
           <div className="best-sellers mt-4">
             <br />
             <div className="word-best-sellers d-flex justify-content-center">
-              <h3>We assure</h3>
+              <h3>{t("weAssure")}</h3>
             </div>
             <div className="line d-flex justify-content-center">
               <img
@@ -356,8 +366,8 @@ const Home = () => {
                     <i class="fa-solid fa-truck-fast"></i>
                   </div>
                   <div className="shipping">
-                    <h4>Free shipping</h4>
-                    <p>Cash on delivery</p>
+                    <h4>{t("freeShipping")}</h4>
+                    <p>{t("cashOnDelivery")}</p>
                   </div>
                 </div>
               </div>
@@ -367,8 +377,8 @@ const Home = () => {
                     <i class="fa-solid fa-repeat"></i>
                   </div>
                   <div className="shipping">
-                    <h4>Trade in</h4>
-                    <p>Buy Play Sell Repeat</p>
+                    <h4>{t("tradeIn")}</h4>
+                    <p>{t("sellRepeat")}</p>
                   </div>
                 </div>
               </div>
@@ -378,7 +388,7 @@ const Home = () => {
                     <i class="fa-solid fa-phone"></i>
                   </div>
                   <div className="shipping">
-                    <h4>Support</h4>
+                    <h4>{t("support")}</h4>
                     <p>10AM - 6PM (Mon-Sat)</p>
                   </div>
                 </div>
@@ -389,8 +399,8 @@ const Home = () => {
                     <i class="fa-solid fa-rotate-left"></i>
                   </div>
                   <div className="shipping">
-                    <h4>Easy Returns</h4>
-                    <p>7 Days return policy</p>
+                    <h4>{t("easyReturns")}</h4>
+                    <p>{t("returnPolicy")}</p>
                   </div>
                 </div>
               </div>
@@ -426,10 +436,10 @@ const Home = () => {
                 className="legal-wrapper col-12 col-lg-6 help-need"
                 onClick={showLegal}
               >
-                <h4>Legal & Privacy</h4>
+                <h4>{t("legalPrivacy")}</h4>
                 <ul className="legal-dropdown d-none d-lg-block">
-                  <li>Terms and Condition</li>
-                  <li>Cancellation & Refund Policy</li>
+                  <li>{t("termsCondition")}</li>
+                  <li>{t("cancel")}</li>
                   <li>Trade In Policy</li>
                   <li>Shipping Policy</li>
                   <li>Privacy Policy</li>

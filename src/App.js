@@ -83,8 +83,25 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ProtectedRoute from "./Components/ProtectedRoute";
 import UserInfo from "./Components/UserInfo";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 
 function App() {
+  const { t, i18n } = useTranslation();
+
+  const handleChangeLanguage = (event) => {
+    const selectedLang = event.target.value;
+    localStorage.setItem("language", selectedLang);
+    i18n.changeLanguage(selectedLang.toLowerCase());
+  };
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, [i18n]);
+
   const showLinks = () => {
     let dots = document.querySelector(".three-dots");
     let links = document.querySelector(".header-links");
@@ -143,7 +160,7 @@ function App() {
           <div className="header-links pt-3 d-none d-md-flex col-5 col-md-8 col-lg-6">
             <ul className="d-md-flex dropdown-lists">
               <li className="drop-link" onClick={showLinksComputer}>
-                Games
+                {t("games")}
                 <i className="fa-solid fa-chevron-down"></i>
                 <ul className="dropdown d-none">
                   <div className="d-flex align-items-center">
@@ -169,16 +186,16 @@ function App() {
                 </ul>
               </li>
               <NavLink to={"/Consoles"}>
-                <li>Consoles</li>
+                <li>{t("consoles")}</li>
               </NavLink>
               <NavLink to={"/Accesories"}>
-                <li>Accessories</li>
+                <li>{t("accessories")}</li>
               </NavLink>
               <NavLink to={"/PcComponents"}>
-                <li>PC Components</li>
+                <li>{t("components")}</li>
               </NavLink>
               <NavLink to={"/Sell"}>
-                <li>Sell</li>
+                <li>{t("sell")}</li>
               </NavLink>
             </ul>
           </div>
@@ -192,6 +209,18 @@ function App() {
             <Link to={"/basket"}>
               <i className="fa-solid fa-cart-shopping"></i>
             </Link>
+            <div>
+              <select
+                name="language"
+                id="language"
+                value={i18n.language}
+                onChange={handleChangeLanguage}
+              >
+                <option value="en">EN</option>
+                <option value="az">AZ</option>
+                <option value="ru">RU</option>
+              </select>
+            </div>
           </div>
         </div>
         <Routes>

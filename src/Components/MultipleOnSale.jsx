@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 function MultipleOnSale() {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, [i18n]);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -17,7 +27,7 @@ function MultipleOnSale() {
         <Link to={"/madden"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1240"
                 alt="last-of-us"
@@ -48,7 +58,7 @@ function MultipleOnSale() {
         <Link to={"/ps4"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1085"
                 alt="gta-v"
@@ -81,7 +91,7 @@ function MultipleOnSale() {
         <Link to={"/madden"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1240"
                 alt="last-of-us"
@@ -112,7 +122,7 @@ function MultipleOnSale() {
         <Link to={"/f1"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1786"
                 alt="spider-man"
@@ -143,7 +153,7 @@ function MultipleOnSale() {
         <Link to={"/xbox"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1128"
                 alt="ghost"
@@ -177,7 +187,7 @@ function MultipleOnSale() {
         <Link to={"/nintendo"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1717"
                 alt="ghost"
@@ -211,7 +221,7 @@ function MultipleOnSale() {
         <Link to={"/ps4pro"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1872"
                 alt="ghost"
@@ -222,8 +232,8 @@ function MultipleOnSale() {
             <div className="product-info">
               <div className="product-text">
                 <p>
-                  SONY PLAYSTATION 4 PRO 1 TB (BODY DAMAGE) BLACK - PS4
-                  (PRE-OWNED)
+                  SONY PLAYSTATION 4 PRO 1 TB (BODY DAMAGE) BLACK - PS4 (
+                  {t("preOwned")})
                 </p>
               </div>
               <div className="product-card d-flex justify-content-between mt-2">
@@ -245,7 +255,7 @@ function MultipleOnSale() {
         <Link to={"/ps4pro"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1872"
                 alt="ghost"
@@ -256,8 +266,8 @@ function MultipleOnSale() {
             <div className="product-info">
               <div className="product-text">
                 <p>
-                  SONY PLAYSTATION 4 PRO 1 TB (BODY DAMAGE) BLACK - PS4
-                  (PRE-OWNED)
+                  SONY PLAYSTATION 4 PRO 1 TB (BODY DAMAGE) BLACK - PS4 (
+                  {t("preOwned")})
                 </p>
               </div>
               <div className="product-card d-flex justify-content-between mt-2">
