@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Routes, Route, Link, NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 function MultipleConsoles() {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, [i18n]);
+
   const settings = {
     dots: true,
     infinite: true,
@@ -17,7 +27,7 @@ function MultipleConsoles() {
         <Link to={"/ps5standard"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_976"
                 alt="last-of-us"
@@ -40,9 +50,6 @@ function MultipleConsoles() {
                     <p>₹ 52999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -50,7 +57,7 @@ function MultipleConsoles() {
         <Link to={"/xboxs"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1058"
                 alt="gta-v"
@@ -71,9 +78,6 @@ function MultipleConsoles() {
                     <p>₹ 31999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -81,7 +85,7 @@ function MultipleConsoles() {
         <Link to={"/ps5dual"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1595"
                 alt="last-of-us"
@@ -105,9 +109,6 @@ function MultipleConsoles() {
                     <p>₹ 5999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -115,7 +116,7 @@ function MultipleConsoles() {
         <Link to={"/ps5white"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1086"
                 alt="spider-man"
@@ -139,9 +140,6 @@ function MultipleConsoles() {
                     <p>₹ 4999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -149,7 +147,7 @@ function MultipleConsoles() {
         <Link to={"/ps4jet"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_998"
                 alt="ghost"
@@ -172,9 +170,6 @@ function MultipleConsoles() {
                     <p>₹ 26999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -182,7 +177,7 @@ function MultipleConsoles() {
         <Link to={"/nintendo"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1717"
                 alt="ghost"
@@ -206,9 +201,6 @@ function MultipleConsoles() {
                     <p>₹ 27999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -216,7 +208,7 @@ function MultipleConsoles() {
         <Link to={"/ps4pro"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_1872"
                 alt="ghost"
@@ -240,9 +232,6 @@ function MultipleConsoles() {
                     <p>₹ 24999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -250,7 +239,7 @@ function MultipleConsoles() {
         <Link to={"/nintendoled"} className="transform">
           <div className="product-first">
             <div className="product-name">
-              <p>Pre Owned</p>
+              <p>{t("preOwned")}</p>
               <img
                 src="https://relay-bl-in-records.sgp1.cdn.digitaloceanspaces.com/GameNation/EA_999"
                 alt="ghost"
@@ -273,9 +262,6 @@ function MultipleConsoles() {
                   <div className="normal-price">
                     <p>₹ 27999</p>
                   </div>
-                </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </div>
               </div>
             </div>

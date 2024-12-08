@@ -27,8 +27,8 @@ const Basket = () => {
   }
   const console2 = () => {
     Swal.fire({
-      title: "Now You Can Sell Your Product",
-      text: "Product Added to Sell Cart!",
+      title: t("nowSell"),
+      text: t("productAddSell"),
       icon: "success",
     });
   };

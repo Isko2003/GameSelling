@@ -121,12 +121,6 @@ const PCComponents = () => {
                               <p>₹ 27999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -154,12 +148,6 @@ const PCComponents = () => {
                             <div className="normal-price">
                               <p>₹ 21399</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -189,12 +177,6 @@ const PCComponents = () => {
                               <p>₹ 27999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -219,12 +201,6 @@ const PCComponents = () => {
                             <div className="price-display">
                               <p>₹ 22999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -254,12 +230,6 @@ const PCComponents = () => {
                               <p>₹ 52999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -287,12 +257,6 @@ const PCComponents = () => {
                             <div className="normal-price">
                               <p>₹ 31999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -322,12 +286,6 @@ const PCComponents = () => {
                               <p>₹ 5999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -355,12 +313,6 @@ const PCComponents = () => {
                             <div className="normal-price">
                               <p>₹ 4999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -390,12 +342,6 @@ const PCComponents = () => {
                               <p>₹ 26999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -423,12 +369,6 @@ const PCComponents = () => {
                             <div className="normal-price">
                               <p>₹ 27999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -460,12 +400,6 @@ const PCComponents = () => {
                               <p>₹ 23999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -493,12 +427,6 @@ const PCComponents = () => {
                             <div className="normal-price">
                               <p>₹ 21999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -528,12 +456,6 @@ const PCComponents = () => {
                               <p>₹ 21999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -561,12 +483,6 @@ const PCComponents = () => {
                             <div className="normal-price">
                               <p>₹ 17999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -596,12 +512,6 @@ const PCComponents = () => {
                               <p>₹ 54990</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -629,12 +539,6 @@ const PCComponents = () => {
                             <div className="normal-price">
                               <p>₹ 54990</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>

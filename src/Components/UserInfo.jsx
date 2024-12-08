@@ -21,7 +21,7 @@ const UserInfo = () => {
     localStorage.removeItem("loggedInUser");
     Swal.fire({
       icon: "success",
-      title: "Logged out successfully",
+      title: t("loggedOut"),
       timer: 2000,
       showConfirmButton: false,
     }).then(() => {
@@ -32,7 +32,7 @@ const UserInfo = () => {
   return (
     <div className="user-info-container">
       <div className="user-info-card">
-        <h2>{t("userInformation")}</h2>
+        <h2 className="user-info">{t("userInformation")}</h2>
         {user ? (
           <div className="user-details">
             <div className="user-detail">

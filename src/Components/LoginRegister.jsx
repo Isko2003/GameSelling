@@ -1,9 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import Register from "./Register";
 import Swal from "sweetalert2";
+import { useTranslation } from "react-i18next";
 
 const LoginRegister = () => {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, [i18n]);
+
   const [showPass, setShowPass] = useState("password");
   const [eye, setEyeSlash] = useState("fa-solid fa-eye-slash");
   const [email, setEmail] = useState("");
@@ -20,15 +30,15 @@ const LoginRegister = () => {
       localStorage.setItem("loggedInUser", JSON.stringify(user));
       Swal.fire({
         icon: "success",
-        title: "Login successful!",
+        title: t("loginSuccessfull"),
       }).then(() => {
         navigate("/");
       });
     } else {
       Swal.fire({
         icon: "error",
-        title: "Login failed!",
-        text: "Invalid email or password.",
+        title: t("loginFailed"),
+        text: t("invalidEmail"),
       });
     }
   };
@@ -46,7 +56,7 @@ const LoginRegister = () => {
     if (event.key === "Enter") {
       setTimeout(() => {
         handleLogin();
-      }, 500)
+      }, 500);
     }
   };
 
@@ -56,7 +66,7 @@ const LoginRegister = () => {
         <div className="login-signin">
           <div className="login-part">
             <div className="login-text">
-              <h2>LOGIN</h2>
+              <h2>{t("login")}</h2>
               <div className="login-line d-flex justify-content-center">
                 <img
                   src="https://gamenation.in/assets/imgs/underline.png"
@@ -100,12 +110,12 @@ const LoginRegister = () => {
                 className="login-btn d-flex justify-content-center"
                 onClick={handleLogin}
               >
-                Login
+                {t("login")}
               </button>
             </div>
-            <span>Not registered yet?</span>
+            <span>{t("notRegistered")}</span>
             <Link to={"/register"}>
-              <span>Register here</span>
+              <span>{t("registerHere")}</span>
             </Link>
           </div>
         </div>

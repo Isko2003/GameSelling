@@ -45,9 +45,6 @@ const MultipleOnArrivals = () => {
                     <p>₹ 4999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -76,9 +73,6 @@ const MultipleOnArrivals = () => {
                     <p>₹ 4899</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -103,9 +97,6 @@ const MultipleOnArrivals = () => {
                   <div className="price-display">
                     <p>₹ 3999</p>
                   </div>
-                </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
@@ -135,9 +126,6 @@ const MultipleOnArrivals = () => {
                     <p>₹ 4999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -165,9 +153,6 @@ const MultipleOnArrivals = () => {
                   <div className="normal-price">
                     <p>₹ 3399</p>
                   </div>
-                </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
@@ -197,9 +182,6 @@ const MultipleOnArrivals = () => {
                     <p>₹ 4799</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -227,9 +209,6 @@ const MultipleOnArrivals = () => {
                   <div className="normal-price">
                     <p>₹ 4699</p>
                   </div>
-                </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </div>
               </div>
             </div>

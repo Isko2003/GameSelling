@@ -13,7 +13,7 @@ const Sell = () => {
                   desc={item.desc}
                   price={item.price}
                   item={item}
-                  key={index}
+                key={index}
               />
             )
           })

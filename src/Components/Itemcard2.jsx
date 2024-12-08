@@ -18,8 +18,8 @@ const Itemcard2 = (props) => {
   const [message, setMessage] = useState("");
   const console2 = () => {
     Swal.fire({
-      title: "Keep Going :)",
-      text: "Product Added to Sell Cart!",
+      title: t("keepGoing"),
+      text: t("productAddSell"),
       icon: "success",
     });
   };

@@ -1,9 +1,19 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Routes, Route, Link, useNavigate } from "react-router-dom";
 import LoginRegister from "./LoginRegister";
 import Swal from "sweetalert2";
+import { useTranslation } from "react-i18next";
 
 const Register = () => {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language");
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+  }, [i18n]);
+
   const [showPass, setShowPass] = useState("password");
   const [eye, setEyeSlash] = useState("fa-solid fa-eye-slash");
   const [formData, setFormData] = useState({
@@ -29,7 +39,7 @@ const Register = () => {
       Swal.fire({
         icon: "error",
         title: "Oops...",
-        text: "Please fill in all fields!",
+        text: t("fill"),
       });
       return;
     }
@@ -42,8 +52,8 @@ const Register = () => {
     if (userExists) {
       Swal.fire({
         icon: "error",
-        title: "Registration Failed",
-        text: "This email is already registered. Please use a different email.",
+        title: t("registerFail"),
+        text: t("alreadyRegister"),
       });
       return;
     }
@@ -51,7 +61,7 @@ const Register = () => {
     storedUsers.push(formData);
     localStorage.setItem("users", JSON.stringify(storedUsers));
     Swal.fire({
-      title: "You Have Been Registered Successfully",
+      title: t("registerSuccess"),
       icon: "success",
     }).then(() => {
       navigate("/login-register");
@@ -77,7 +87,7 @@ const Register = () => {
         <div className="login-signup">
           <div className="login-part">
             <div className="login-text">
-              <h2>REGISTER</h2>
+              <h2>{t("register")}</h2>
               <div className="login-line d-flex justify-content-center">
                 <img
                   src="https://gamenation.in/assets/imgs/underline.png"
@@ -89,7 +99,7 @@ const Register = () => {
               <input
                 type="text"
                 name="firstname"
-                placeholder="Name"
+                placeholder={t("name")}
                 value={formData.firstname}
                 onChange={handleChange}
               />
@@ -97,7 +107,7 @@ const Register = () => {
               <input
                 type="text"
                 name="lastname"
-                placeholder="Surname"
+                placeholder={t("surname")}
                 value={formData.lastname}
                 onChange={handleChange}
               />
@@ -106,7 +116,7 @@ const Register = () => {
                 type="email"
                 name="email"
                 id="email"
-                placeholder="Email"
+                placeholder={t("email")}
                 value={formData.email}
                 onChange={handleChange}
               />
@@ -125,7 +135,7 @@ const Register = () => {
                       ? "green"
                       : "red",
                 }}
-                placeholder="Password"
+                placeholder={t("password")}
               />
               <i className={eye} onClick={togglePass}></i>
               <br />
@@ -139,13 +149,13 @@ const Register = () => {
                     handleRegister();
                   }}
                 >
-                  Sign in
+                  {t("signIn")}
                 </button>
               </Link>
             </div>
-              <span>Already Registered ?</span>
+            <span>{t("alreadyRegistered")} ?</span>
             <Link to={"/login-register"}>
-              <span>Login here</span>
+              <span>{t("loginHere")}</span>
             </Link>
           </div>
         </div>

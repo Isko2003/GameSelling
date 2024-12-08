@@ -51,9 +51,6 @@ function MultipleItems() {
                     <p>₹ 5599</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -81,9 +78,6 @@ function MultipleItems() {
                   <div className="normal-price">
                     <p>₹ 2599</p>
                   </div>
-                </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
@@ -113,9 +107,6 @@ function MultipleItems() {
                     <p>₹ 3999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -140,9 +131,6 @@ function MultipleItems() {
                   <div className="price-display">
                     <p>₹ 1999</p>
                   </div>
-                </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
@@ -172,9 +160,6 @@ function MultipleItems() {
                     <p>₹ 2999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -202,9 +187,6 @@ function MultipleItems() {
                   <div className="normal-price">
                     <p>₹ 1499</p>
                   </div>
-                </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
@@ -234,9 +216,6 @@ function MultipleItems() {
                     <p>₹ 2899</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -259,9 +238,6 @@ function MultipleItems() {
                   <div className="normal-price">
                     <p>₹ 4499</p>
                   </div>
-                </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
@@ -290,9 +266,6 @@ function MultipleItems() {
                   <div className="normal-price">
                     <p>₹ 1099</p>
                   </div>
-                </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </div>
               </div>
             </div>

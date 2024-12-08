@@ -124,12 +124,6 @@ const Accesories = () => {
                               <p>₹ 9999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -161,12 +155,6 @@ const Accesories = () => {
                               <p>₹ 4199</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -195,12 +183,6 @@ const Accesories = () => {
                               <p>₹ 27999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -225,12 +207,6 @@ const Accesories = () => {
                             <div className="price-display">
                               <p>₹ 22999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -263,12 +239,6 @@ const Accesories = () => {
                               <p>₹ 52999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -299,12 +269,6 @@ const Accesories = () => {
                             <div className="normal-price">
                               <p>₹ 31999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -337,12 +301,6 @@ const Accesories = () => {
                               <p>₹ 5999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -374,12 +332,6 @@ const Accesories = () => {
                               <p>₹ 4999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -407,12 +359,6 @@ const Accesories = () => {
                             <div className="normal-price">
                               <p>₹ 26999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -442,12 +388,6 @@ const Accesories = () => {
                               <p>₹ 27999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -475,12 +415,6 @@ const Accesories = () => {
                             <div className="normal-price">
                               <p>₹ 23999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -510,12 +444,6 @@ const Accesories = () => {
                               <p>₹ 21999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -544,12 +472,6 @@ const Accesories = () => {
                               <p>₹ 21999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -577,12 +499,6 @@ const Accesories = () => {
                             <div className="normal-price">
                               <p>₹ 17999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -614,12 +530,6 @@ const Accesories = () => {
                               <p>₹ 54990</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -647,12 +557,6 @@ const Accesories = () => {
                             <div className="normal-price">
                               <p>₹ 54990</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -702,12 +606,6 @@ const Accesories = () => {
                               <p>₹ 9999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -738,12 +636,6 @@ const Accesories = () => {
                             <div className="normal-price">
                               <p>₹ 4199</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -776,12 +668,6 @@ const Accesories = () => {
                               <p>₹ 27999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -809,12 +695,6 @@ const Accesories = () => {
                             <div className="price-display">
                               <p>₹ 22999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -847,12 +727,6 @@ const Accesories = () => {
                               <p>₹ 52999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -883,12 +757,6 @@ const Accesories = () => {
                             <div className="normal-price">
                               <p>₹ 31999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -921,12 +789,6 @@ const Accesories = () => {
                               <p>₹ 5999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -957,12 +819,6 @@ const Accesories = () => {
                             <div className="normal-price">
                               <p>₹ 4999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -995,12 +851,6 @@ const Accesories = () => {
                               <p>₹ 26999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -1031,12 +881,6 @@ const Accesories = () => {
                             <div className="normal-price">
                               <p>₹ 27999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -1069,12 +913,6 @@ const Accesories = () => {
                               <p>₹ 23999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -1106,12 +944,6 @@ const Accesories = () => {
                               <p>₹ 21999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -1142,12 +974,6 @@ const Accesories = () => {
                             <div className="normal-price">
                               <p>₹ 21999</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>
@@ -1180,12 +1006,6 @@ const Accesories = () => {
                               <p>₹ 17999</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -1214,12 +1034,6 @@ const Accesories = () => {
                               <p>₹ 54990</p>
                             </div>
                           </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -1247,12 +1061,6 @@ const Accesories = () => {
                             <div className="normal-price">
                               <p>₹ 54990</p>
                             </div>
-                          </div>
-                          <div className="cta-btn">
-                            <i
-                              class="fa-solid fa-arrow-right"
-                              aria-hidden="true"
-                            ></i>
                           </div>
                         </div>
                       </div>

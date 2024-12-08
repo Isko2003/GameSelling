@@ -48,9 +48,6 @@ function MultipleOnSale() {
                     <p>₹ 3999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -81,9 +78,6 @@ function MultipleOnSale() {
                     <p>₹ 9999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -112,9 +106,6 @@ function MultipleOnSale() {
                     <p>₹ 3999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -142,9 +133,6 @@ function MultipleOnSale() {
                   <div className="normal-price">
                     <p>₹ 3799</p>
                   </div>
-                </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
@@ -177,9 +165,6 @@ function MultipleOnSale() {
                     <p>₹ 4199</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -211,9 +196,6 @@ function MultipleOnSale() {
                     <p>₹ 27999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -245,9 +227,6 @@ function MultipleOnSale() {
                     <p>₹ 24999</p>
                   </div>
                 </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
-                </div>
               </div>
             </div>
           </div>
@@ -278,9 +257,6 @@ function MultipleOnSale() {
                   <div className="normal-price">
                     <p>₹ 24999</p>
                   </div>
-                </div>
-                <div className="cta-btn">
-                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </div>
               </div>
             </div>

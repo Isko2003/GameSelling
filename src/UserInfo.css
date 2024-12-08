@@ -24,7 +24,7 @@
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
 }
 
-h2 {
+.user-info {
   font-size: 24px;
   margin-bottom: 20px;
   color: #ffffff;
@@ -68,7 +68,7 @@ span {
     padding: 20px;
   }
 
-  h2 {
+  .user-info {
     font-size: 20px;
   }
 
@@ -82,7 +82,7 @@ span {
     padding: 15px;
   }
 
-  h2 {
+  .user-info {
     font-size: 18px;
   }
 
